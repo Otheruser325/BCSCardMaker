@@ -11,6 +11,9 @@
 
         "Defender" : {"Title": "Defender +{VALUE}", "OptionTitle": "Defender",
         "Description": "Can defend on opponent's turn, has +{VALUE} damage on opponent's turn"},
+		
+		"Tank" : {"Title": "Tank {VALUE}", "OptionTitle": "Tank",
+        "Description": "Can protect your hero from incoming bloon attacks; has {VALUE} health and taunts attacking bloons over to it. Monkey is removed when out of health"},
 
         "Detect" : {"Title": "Detect",
         "Description": "Can target Camo Bloons normally"},
@@ -135,7 +138,10 @@
         "StrongAcidPool": {"Title": "Strong Acid Pool",
         "Description": "Deals 50 damage to any Bloon ending its turn on it. Lasts 2 turns"},
 
-        "Sabotage": {"Title": "Sabotage",
+        "Pacifist": {"Title": "Pacifist",
+        "Description": "Can target friendly Monkeys normally"},
+		
+		"Sabotage": {"Title": "Sabotage",
         "Description": "Can target enemy Monkeys normally"},
 
         "ZeroGold": {"Title": "Zero Gold",
