@@ -46,7 +46,7 @@ const addKeyword = () => {
     let finalTitle = keywords[keywordDropdown.value].Title.replace("{VALUE}", keywordValue.value)
     keywordTitle.innerHTML = md.renderInline(finalTitle)
     keywordTitleStroke.innerHTML = md.renderInline(finalTitle)
-    keywordImg.src = `/src/img/Keyword/${keywordDropdown.value}.png`
+    keywordImg.src = `/BCSCardMaker/src/img/Keyword/${keywordDropdown.value}.png`
     let newKeyword = keywordElement.cloneNode(true)
     newKeyword.style.display = "flex"
     let addedKeyword = keywordHolder.appendChild(newKeyword)
@@ -209,8 +209,8 @@ const togglePassive = () => {
     passiveToggle.checked = false
     passiveToggle.addEventListener("input", function (event) {
         const abilityButton = document.getElementById(`ability-icon-button-${abilityOptions.value}`)
-        if (passiveToggle.checked) abilityButton.src = "/src/img/HeroCreator/PassiveAbilityButton.png"
-        else abilityButton.src = "/src/img/HeroCreator/ActiveAbilityButton.png"
+        if (passiveToggle.checked) abilityButton.src = "/BCSCardMaker/src/img/HeroCreator/PassiveAbilityButton.png"
+        else abilityButton.src = "/BCSCardMaker/src/img/HeroCreator/ActiveAbilityButton.png"
         currentAbilityInfo.Passive = passiveToggle.checked
     })
 }
@@ -221,10 +221,10 @@ const toggleBloontoniumCost = () => {
     const CostText = document.getElementById("cost-text-container")
     BloontoniumToggle.checked = false
     BloontoniumToggle.addEventListener("input", function (event) {
-        let CostImg = "/src/img/CardIcon/Coin.png"
+        let CostImg = "/BCSCardMaker/src/img/CardIcon/Coin.png"
         let CostTop = "4%"
         if (BloontoniumToggle.checked) {
-            CostImg = "/src/img/CardIcon/Bloontonium.png"
+            CostImg = "/BCSCardMaker/src/img/CardIcon/Bloontonium.png"
             CostTop = "5%"
         }
         for (let i = 0; i < Coins.length - 1; i++) {
@@ -286,7 +286,7 @@ const editDropdownEvent = (ID, folderName) => {
     // on reload, the empty image is selected by default
     Dropdown.value = "None"
     Dropdown.addEventListener("change", function (event) {
-    DropdownImg.src = `/src/img/${folderName}/${Dropdown.value}.png`})
+    DropdownImg.src = `/BCSCardMaker/src/img/${folderName}/${Dropdown.value}.png`})
 }
 
 const editAbilityOptionEvent = () => {
@@ -404,8 +404,8 @@ const toggleVisibilities = (cardTypeObj) => {
 // card art properties for every card type
 const cardTypes = {
   monkey: {
-    borderSrc: "/src/img/Border/MonkeyCardBorder.png",
-    damageSrc: "/src/img/CardIcon/MonkeyDamage.png",
+    borderSrc: "/BCSCardMaker/src/img/Border/MonkeyCardBorder.png",
+    damageSrc: "/BCSCardMaker/src/img/CardIcon/MonkeyDamage.png",
     imgHeight: "96%",
     imgWidth: "92%",
     damageLeft: "90%",
@@ -565,7 +565,7 @@ const draftLoaded = (cardData) => {
     addDraftKeywords(cardData.Keywords)
 }
 
-function addDraftImage(imgData, imgSrc, emptyImg = "/src/img/None.png") {
+function addDraftImage(imgData, imgSrc, emptyImg = "/BCSCardMaker/src/img/None.png") {
     if (imgData) {
         const newImg = document.createElement("img");
         newImg.crossOrigin = "anonymous";
@@ -580,7 +580,7 @@ function addDraftImage(imgData, imgSrc, emptyImg = "/src/img/None.png") {
     }
 }
 
-function addDraftImagePromise(imgData, imgSrc, resolve, emptyImg = "/src/img/None.png") {
+function addDraftImagePromise(imgData, imgSrc, resolve, emptyImg = "/BCSCardMaker/src/img/None.png") {
     if (imgData) {
         const newImg = document.createElement("img");
         newImg.crossOrigin = "anonymous";
@@ -610,7 +610,7 @@ const addDraftKeywords = (Keywords) => {
         keywordTitle.innerHTML = md.renderInline(finalTitle)
         keywordTitleStroke.innerHTML = md.renderInline(finalTitle)
 
-        keywordImg.src = `/src/img/Keyword/${Keyword}.png`
+        keywordImg.src = `/BCSCardMaker/src/img/Keyword/${Keyword}.png`
         let newKeyword = keywordElement.cloneNode(true)
         newKeyword.style.display = "flex"
         let addedKeyword = keywordHolder.appendChild(newKeyword)
