@@ -4,7 +4,7 @@
         "Description": "Reduce damage recieved by {VALUE}"},
 
         "ArmorPiercing" : {"Title": "Armor Piercing",
-        "Description": "Hit Bloons lose all Armor"},
+        "Description": "Targeted damaged Bloon loses all Armor"},
 
         "Camo" : {"Title": "Camo",
         "Description": "Attackers must target non-Camo Bloons first"},
@@ -15,11 +15,17 @@
         "Detect" : {"Title": "Detect",
         "Description": "Can target Camo Bloons normally"},
 
+        "Focus" : {"Title": "Focus",
+        "Description": "Can bypass Must Pop conditions normally"},
+
         "DoubleAttack" : {"Title": "Double Attack",
         "Description" : "Attacks twice"},
 
         "TripleAttack": {"Title": "Triple Attack",
         "Description": "Attacks three times"},
+
+        "QuadrupleAttack": {"Title": "Quadruple Attack",
+        "Description": "Attacks four times"},
         
         "Doomed": {"Title": "Doomed",
         "Description": "This Monkey will be removed at the start of its next turn"},
@@ -38,6 +44,9 @@
 
         "OnFire": {"Title": "On Fire",
         "Description": "Will take 30 damage at the end of its turn and before attacking"},
+
+        "OnNapalmFire": {"Title": "On Napalm Fire",
+        "Description": "Will take 60 damage at the end of its turn and before attacking"},
     
         "OnLeak": {"Title": "On Leak",
         "Description": "Triggers when a bloon attacks a hero (after defenders have acted)"},
@@ -56,6 +65,12 @@
         
         "OnReplace": {"Title": "On Replace",
         "Description": "Triggers when this Monkey is replaced by another Monkey"},
+
+        "OnRemoved": {"Title": "On Removed",
+        "Description": "Triggers when this Monkey is removed. Does not trigger if this Monkey was replaced by another Monkey"},
+
+        "OnEmpty": {"Title": "On Empty",
+        "Description": "Triggers when this Monkey has no ammo"},
 
         "OnTurnStart": {"Title": "On Turn Start",
         "Description": "Triggers at start of turn"},
@@ -80,9 +95,21 @@
         
         "SplashDamage": {"Title": "Splash Damage",
         "Description": "Also deals damage to Bloons on either side of the target"},
+
+        "Pierce": {"Title": "Pierce {VALUE}", "OptionTitle": "Pierce",
+        "Description": "Deals equal damage to the next {VALUE} Bloons in line"},
         
         "Stunned": {"Title": "Stunned",
         "Description": "Monkey can't attack or reload until stun wears off. Bloon delay does not reduce at end of turn"},
+
+        "Silenced": {"Title": "Silenced",
+        "Description": "Silenced Monkeys or Bloons cannot attack until silence wears off"},
+
+        "Paused": {"Title": "Paused",
+        "Description": "Monkey can't be targeted by Hero Abilities and Powers nor attack or reload until pause wears off. Bloon delay does not reduce at end of turn and cannot be damaged or targeted by Monkeys, Hero Abilities or Powers until pause wears off"},
+
+        "Deactivated": {"Title": "Deactivated",
+        "Description": "Monkey or Bloon can't trigger any on keyword effects (e.g. **On Turn Start**) at the start of its next turn"},
 
         "Temporary": {"Title": "Temporary",
         "Description": "Is removed at end of turn after ammo reaches 0"},
@@ -99,8 +126,14 @@
         "StrongAcidPool": {"Title": "Strong Acid Pool",
         "Description": "Deals 50 damage to any Bloon ending its turn on it. Lasts 2 turns"},
 
+        "Sabotage": {"Title": "Sabotage",
+        "Description": "Can target enemy Monkeys normally"},
+
         "ZeroGold": {"Title": "Zero Gold",
-        "Description": "Triggers an additional effect if you have 0 Gold"}
+        "Description": "Triggers an additional effect if you have 0 Gold"},
+
+        "250Health": {"Title": "50% Health",
+        "Description": "Triggers an additional effect if your Hero falls below 250 health"}
     },
 
     "heroes": {
