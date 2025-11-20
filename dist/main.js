@@ -4579,7 +4579,7 @@
                     o = Or[r].Description.replace("{VALUE}", n);
                 Sn.innerHTML = ko.renderInline(o);
                 let i = Or[r].Title.replace("{VALUE}", n);
-                qn.innerHTML = ko.renderInline(i), Rn.innerHTML = ko.renderInline(i), Ln.src = `/src/img/Keyword/${r}.png`;
+                qn.innerHTML = ko.renderInline(i), Rn.innerHTML = ko.renderInline(i), Ln.src = `/BCSCardMaker//src/img/Keyword/${r}.png`;
                 let s = zn.cloneNode(!0);
                 s.style.display = "flex";
                 let a = En.appendChild(s);
@@ -4806,7 +4806,7 @@
         let e = Or[In.value].Description.replace("{VALUE}", Mn.value);
         Sn.innerHTML = ko.renderInline(e);
         let t = Or[In.value].Title.replace("{VALUE}", Mn.value);
-        qn.innerHTML = ko.renderInline(t), Rn.innerHTML = ko.renderInline(t), Ln.src = `/src/img/Keyword/${In.value}.png`;
+        qn.innerHTML = ko.renderInline(t), Rn.innerHTML = ko.renderInline(t), Ln.src = `/BCSCardMaker/src/img/Keyword/${In.value}.png`;
         let r = zn.cloneNode(!0);
         r.style.display = "flex";
         let n = En.appendChild(r);
