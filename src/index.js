@@ -429,8 +429,8 @@ const cardTypes = {
     delayVisibility: true
   },
   bloon: {
-    borderSrc: "/src/img/Border/BloonCardBorder.png",
-    damageSrc: "/src/img/CardIcon/BloonDamage.png",
+    borderSrc: "/BCSCardMaker/src/img/Border/BloonCardBorder.png",
+    damageSrc: "/BCSCardMaker/src/img/CardIcon/BloonDamage.png",
     imgHeight: "55%",
     imgWidth: "75%",
     damageLeft: "88%",
@@ -454,7 +454,7 @@ const cardTypes = {
     delayVisibility: true
   },
   power: {
-    borderSrc: "/src/img/Border/PowerCardBorder.png",
+    borderSrc: "/BCSCardMaker/src/img/Border/PowerCardBorder.png",
     imgHeight: "55%",
     imgWidth: "86%",
     imgTransform: "translate(-51%, -7%)",
