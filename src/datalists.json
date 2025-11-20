@@ -59,6 +59,9 @@
         
         "OnAttack": {"Title": "On Attack",
         "Description": "Triggers when this Monkey attacks"},
+		
+		"OnBloonAttack": {"Title": "On Bloon Attack",
+        "Description": "Triggers when a bloon is about to attack your hero"},
         
         "OnReload": {"Title": "On Reload",
         "Description": "Triggers when this Monkey reloads"},
