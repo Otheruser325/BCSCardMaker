@@ -525,7 +525,7 @@ const heroDraftLoaded = (cardData) => {
     fitTextToHeight(document.getElementById("hero-name-container"), 2, 41)
     setToggleCheck("enable-portrait-toggle", cardData.PortraitEnabled)
     const heroPortrait = document.getElementById("hero-portrait")
-    addDraftImage(cardData.Image, heroPortrait, "/src/img/HeroCreator/EmptyPortrait.png")
+    addDraftImage(cardData.Image, heroPortrait, "/BCSCardMaker/src/img/HeroCreator/EmptyPortrait.png")
     addDraftAbilities(cardData.Abilities)
 }
 
