@@ -4579,7 +4579,7 @@
                     o = Or[r].Description.replace("{VALUE}", n);
                 Sn.innerHTML = ko.renderInline(o);
                 let i = Or[r].Title.replace("{VALUE}", n);
-                qn.innerHTML = ko.renderInline(i), Rn.innerHTML = ko.renderInline(i), Ln.src = `/BCSCardMaker//src/img/Keyword/${r}.png`;
+                qn.innerHTML = ko.renderInline(i), Rn.innerHTML = ko.renderInline(i), Ln.src = `/BCSCardMaker/src/img/Keyword/${r}.png`;
                 let s = zn.cloneNode(!0);
                 s.style.display = "flex";
                 let a = En.appendChild(s);
@@ -4769,7 +4769,7 @@
         })
     })(), Jn.checked = !1, Jn.addEventListener("input", function(e) {
         const t = document.getElementById(`ability-icon-button-${jn.value}`);
-        Jn.checked ? t.src = "/BCSCardMaker/src/img/HeroCreator/PassiveAbilityButton.png" : t.src = "/src/img/HeroCreator/ActiveAbilityButton.png", Fr.Passive = Jn.checked
+        Jn.checked ? t.src = "/BCSCardMaker/src/img/HeroCreator/PassiveAbilityButton.png" : t.src = "/BCSCardMaker/src/img/HeroCreator/ActiveAbilityButton.png", Fr.Passive = Jn.checked
     }), (() => {
         const e = document.getElementById("enable-portrait-toggle");
         e.checked = !0;
