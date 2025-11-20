@@ -4449,7 +4449,7 @@
             const r = document.getElementById(`${e}-dropdown`),
                 n = document.getElementById(`${e}`);
             r.value = "None", r.addEventListener("change", function(e) {
-                n.src = `/src/img/${t}/${r.value}.png`
+                n.src = `/BCSCardMaker/src/img/${t}/${r.value}.png`
             })
         },
         Tr = (e, t) => {
@@ -4479,8 +4479,8 @@
         },
         Nr = {
             monkey: {
-                borderSrc: "/src/img/Border/MonkeyCardBorder.png",
-                damageSrc: "/src/img/CardIcon/MonkeyDamage.png",
+                borderSrc: "/BCSCardMaker/src/img/Border/MonkeyCardBorder.png",
+                damageSrc: "/BCSCardMaker/src/img/CardIcon/MonkeyDamage.png",
                 imgHeight: "96%",
                 imgWidth: "92%",
                 damageLeft: "90%",
@@ -4504,8 +4504,8 @@
                 delayVisibility: !0
             },
             bloon: {
-                borderSrc: "/src/img/Border/BloonCardBorder.png",
-                damageSrc: "/src/img/CardIcon/BloonDamage.png",
+                borderSrc: "/BCSCardMaker/src/img/Border/BloonCardBorder.png",
+                damageSrc: "/BCSCardMaker/src/img/CardIcon/BloonDamage.png",
                 imgHeight: "55%",
                 imgWidth: "75%",
                 damageLeft: "88%",
@@ -4529,7 +4529,7 @@
                 delayVisibility: !0
             },
             power: {
-                borderSrc: "/src/img/Border/PowerCardBorder.png",
+                borderSrc: "/BCSCardMaker/src/img/Border/PowerCardBorder.png",
                 imgHeight: "55%",
                 imgWidth: "86%",
                 imgTransform: "translate(-51%, -7%)",
@@ -4554,7 +4554,7 @@
         Pr = kr.heroes,
         Or = kr.keywords;
 
-    function Ur(e, t, r = "/src/img/None.png") {
+    function Ur(e, t, r = "/BCSCardMaker/src/img/None.png") {
         if (e) {
             const r = document.createElement("img");
             r.crossOrigin = "anonymous", r.src = e, r.onload = function() {
@@ -4563,7 +4563,7 @@
         } else t.src = r
     }
 
-    function Vr(e, t, r, n = "/src/img/None.png") {
+    function Vr(e, t, r, n = "/BCSCardMaker/src/img/None.png") {
         if (e) {
             const n = document.createElement("img");
             n.crossOrigin = "anonymous", n.src = e, n.onload = function() {
@@ -4769,7 +4769,7 @@
         })
     })(), Jn.checked = !1, Jn.addEventListener("input", function(e) {
         const t = document.getElementById(`ability-icon-button-${jn.value}`);
-        Jn.checked ? t.src = "/src/img/HeroCreator/PassiveAbilityButton.png" : t.src = "/src/img/HeroCreator/ActiveAbilityButton.png", Fr.Passive = Jn.checked
+        Jn.checked ? t.src = "/BCSCardMaker/src/img/HeroCreator/PassiveAbilityButton.png" : t.src = "/src/img/HeroCreator/ActiveAbilityButton.png", Fr.Passive = Jn.checked
     }), (() => {
         const e = document.getElementById("enable-portrait-toggle");
         e.checked = !0;
@@ -4782,9 +4782,9 @@
             t = document.getElementsByClassName("cost"),
             r = document.getElementById("cost-text-container");
         e.checked = !1, e.addEventListener("input", function(n) {
-            let o = "/src/img/CardIcon/Coin.png",
+            let o = "/BCSCardMaker/src/img/CardIcon/Coin.png",
                 i = "4%";
-            e.checked && (o = "/src/img/CardIcon/Bloontonium.png", i = "5%");
+            e.checked && (o = "/BCSCardMaker/src/img/CardIcon/Bloontonium.png", i = "5%");
             for (let e = 0; e < t.length - 1; e++) t[e].src = o, t[e].style.top = i;
             r.style.top = i
         })
@@ -4869,7 +4869,7 @@
             t.isHero ? (e => {
                 Kr(e.Type), Gr("input-hero-name", e.Title), zr(document.getElementById("hero-name-container"), 2, 41), Wr("enable-portrait-toggle", e.PortraitEnabled);
                 const t = document.getElementById("hero-portrait");
-                Ur(e.Image, t, "/src/img/HeroCreator/EmptyPortrait.png"), async function(e) {
+                Ur(e.Image, t, "/BCSCardMaker/src/img/HeroCreator/EmptyPortrait.png"), async function(e) {
                     for (; Xn.length > 0;) Ar();
                     let t = 1;
                     for (let r in e) {
