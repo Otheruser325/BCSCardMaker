@@ -4806,9 +4806,9 @@
     })();
     const ko = _r();
     ko.disable(["link", "image"]), globalThis.updateCardLayout = Kr, globalThis.setMonkeyStatVisibility = Qr, globalThis.addKeyword = () => {
-        let e = Or[In.value].Description.replace("{VALUE}", Mn.value, "{VALUE2}", Aan.value2);
+        let e = Or[In.value].Description.replace("{VALUE}", Mn.value, "{VALUE2}", Aan.value);
         Sn.innerHTML = ko.renderInline(e);
-        let t = Or[In.value].Title.replace("{VALUE}", Mn.value, "{VALUE2}", Aan.value2);
+        let t = Or[In.value].Title.replace("{VALUE}", Mn.value, "{VALUE2}", Aan.value);
         qn.innerHTML = ko.renderInline(t), Rn.innerHTML = ko.renderInline(t), Ln.src = `/BCSCardMaker/src/img/Keyword/${In.value}.png`;
         let r = zn.cloneNode(!0);
         r.style.display = "flex";

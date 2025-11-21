@@ -41,9 +41,9 @@ const editAbilityTextEvent = (element, hasStroke, part) => {
 }
 
 const addKeyword = () => {
-    let finalDescription = keywords[keywordDropdown.value].Description.replace("{VALUE}", keywordValue.value, "{VALUE2}", keywordValue2.value2)
+    let finalDescription = keywords[keywordDropdown.value].Description.replace("{VALUE}", keywordValue.value, "{VALUE2}", keywordValue2.value)
     keywordDescription.innerHTML = md.renderInline(finalDescription)
-    let finalTitle = keywords[keywordDropdown.value].Title.replace("{VALUE}", keywordValue.value, "{VALUE2}", keywordValue2.value2)
+    let finalTitle = keywords[keywordDropdown.value].Title.replace("{VALUE}", keywordValue.value, "{VALUE2}", keywordValue2.value)
     keywordTitle.innerHTML = md.renderInline(finalTitle)
     keywordTitleStroke.innerHTML = md.renderInline(finalTitle)
     keywordImg.src = `/BCSCardMaker/src/img/Keyword/${keywordDropdown.value}.png`
@@ -51,7 +51,7 @@ const addKeyword = () => {
     newKeyword.style.display = "flex"
     let addedKeyword = keywordHolder.appendChild(newKeyword)
     keywordList.push(addedKeyword)
-    keywordListData.push({keyword: keywordDropdown.value, value: keywordValue.value, value2: keywordValue2.value2})
+    keywordListData.push({keyword: keywordDropdown.value, value: keywordValue.value, value2: keywordValue2.value})
 }
 
 const LongMax = (numArray) => {
@@ -606,7 +606,7 @@ const addDraftKeywords = (Keywords) => {
 
         let Keyword = Keywords[i].keyword
         let Value = Keywords[i].value
-		let Value2 = Keywords[i].value2
+		let Value2 = Keywords[i].value
 
         let finalDescription = keywords[Keyword].Description.replace("{VALUE}", Value, "{VALUE2}", Value2)
         keywordDescription.innerHTML = md.renderInline(finalDescription)
