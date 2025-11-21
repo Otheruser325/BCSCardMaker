@@ -4576,16 +4576,18 @@
             for (let t = 0; t < e.length; t++) {
                 let r = e[t].keyword,
                     n = e[t].value,
-                    o = Or[r].Description.replace("{VALUE}", n);
+					p = e[t].value2,
+                    o = Or[r].Description.replace("{VALUE}", n, "{VALUE2}", p);
                 Sn.innerHTML = ko.renderInline(o);
-                let i = Or[r].Title.replace("{VALUE}", n);
+                let i = Or[r].Title.replace("{VALUE}", n, "{VALUE2}", p);
                 qn.innerHTML = ko.renderInline(i), Rn.innerHTML = ko.renderInline(i), Ln.src = `/BCSCardMaker/src/img/Keyword/${r}.png`;
                 let s = zn.cloneNode(!0);
                 s.style.display = "flex";
                 let a = En.appendChild(s);
                 Cn.push(a), vn.push({
                     keyword: r,
-                    value: n
+                    value: n,
+					value2: p
                 })
             }
         },
@@ -4766,7 +4768,7 @@
         _n.checked = !1, In.disabled = !0, Mn.disabled = !0, Nn.disabled = !0, Pn.disabled = !0, Tn.disabled = !0, Aan.disabled = !0, In.value = "Defender", gn.style.justifyContent = "center", Tn.value = "", Mn.value = 0;
         var e = !1;
         _n.addEventListener("input", function(t) {
-            e != _n.checked && (e = _n.checked, wn.classList.toggle("disabled-text")), _n.checked ? (bn.style.width = "775px", kn.style.display = "flex", In.disabled = !1, Mn.disabled = !1, Nn.disabled = !1, Pn.disabled = !1, Tn.disabled = !1, gn.style.justifyContent = "") : (bn.style.width = "375px", kn.style.display = "none", In.disabled = !0, Mn.disabled = !0, Nn.disabled = !0, Pn.disabled = !0, Tn.disabled = !0, gn.style.justifyContent = "center")
+            e != _n.checked && (e = _n.checked, wn.classList.toggle("disabled-text")), _n.checked ? (bn.style.width = "775px", kn.style.display = "flex", In.disabled = !1, Mn.disabled = !1, Nn.disabled = !1, Pn.disabled = !1, Tn.disabled = !1, Aan.disabled = !1, gn.style.justifyContent = "") : (bn.style.width = "375px", kn.style.display = "none", In.disabled = !0, Mn.disabled = !0, Nn.disabled = !0, Pn.disabled = !0, Tn.disabled = !0, gn.style.justifyContent = "center")
         })
     })(), Jn.checked = !1, Jn.addEventListener("input", function(e) {
         const t = document.getElementById(`ability-icon-button-${jn.value}`);
@@ -4804,16 +4806,17 @@
     })();
     const ko = _r();
     ko.disable(["link", "image"]), globalThis.updateCardLayout = Kr, globalThis.setMonkeyStatVisibility = Qr, globalThis.addKeyword = () => {
-        let e = Or[In.value].Description.replace("{VALUE}", Mn.value);
+        let e = Or[In.value].Description.replace("{VALUE}", Mn.value, "{VALUE2}", Aan.value2);
         Sn.innerHTML = ko.renderInline(e);
-        let t = Or[In.value].Title.replace("{VALUE}", Mn.value);
+        let t = Or[In.value].Title.replace("{VALUE}", Mn.value, "{VALUE2}", Aan.value2);
         qn.innerHTML = ko.renderInline(t), Rn.innerHTML = ko.renderInline(t), Ln.src = `/BCSCardMaker/src/img/Keyword/${In.value}.png`;
         let r = zn.cloneNode(!0);
         r.style.display = "flex";
         let n = En.appendChild(r);
         Cn.push(n), vn.push({
             keyword: In.value,
-            value: Mn.value
+            value: Mn.value,
+			value2: Aan.value
         })
     }, globalThis.removeKeyword = Br, globalThis.resetImageValues = () => {
         _o.x = 0, _o.y = 0, _o.w = bo, _o.h = bo, document.getElementById("x-input").value = 0, document.getElementById("y-input").value = 0, document.getElementById("w-input").value = 100, document.getElementById("h-input").value = 100, Xr()
