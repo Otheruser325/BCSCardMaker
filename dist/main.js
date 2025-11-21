@@ -4715,8 +4715,8 @@
         Wn = document.getElementById("input-ability-name"),
         Kn = document.getElementById("input-ability-description"),
         Qn = document.getElementById("input-bloontonium-cost"),
-        Yn = document.getElementById("ability-img-btn");
-		Aan = document.getElementById("keyword-value-2"),
+        Yn = document.getElementById("ability-img-btn"),
+		Aan = document.getElementById("keyword-value-2");
     var Xn = [],
         eo = [];
     const to = {
