@@ -4683,6 +4683,7 @@
         zn = document.getElementById("keyword-element"),
         Rn = document.getElementById("keyword-title-stroke"),
         Mn = document.getElementById("keyword-value"),
+		Aan = document.getElementById("keyword-value-2"),
         Nn = document.getElementById("add-keyword"),
         Pn = document.getElementById("remove-keyword"),
         On = {
@@ -4717,8 +4718,7 @@
         Wn = document.getElementById("input-ability-name"),
         Kn = document.getElementById("input-ability-description"),
         Qn = document.getElementById("input-bloontonium-cost"),
-        Yn = document.getElementById("ability-img-btn"),
-		Aan = document.getElementById("keyword-value-2");
+        Yn = document.getElementById("ability-img-btn");
     var Xn = [],
         eo = [];
     const to = {
