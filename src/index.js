@@ -41,9 +41,9 @@ const editAbilityTextEvent = (element, hasStroke, part) => {
 }
 
 const addKeyword = () => {
-    let finalDescription = keywords[keywordDropdown.value].Description.replace("{VALUE}", keywordValue.value)
+    let finalDescription = keywords[keywordDropdown.value].Description.replace("{VALUE}", keywordValue.value, "{VALUE2}", keywordValue2.value)
     keywordDescription.innerHTML = md.renderInline(finalDescription)
-    let finalTitle = keywords[keywordDropdown.value].Title.replace("{VALUE}", keywordValue.value)
+    let finalTitle = keywords[keywordDropdown.value].Title.replace("{VALUE}", keywordValue.value, "{VALUE2}", keywordValue2.value)
     keywordTitle.innerHTML = md.renderInline(finalTitle)
     keywordTitleStroke.innerHTML = md.renderInline(finalTitle)
     keywordImg.src = `/BCSCardMaker/src/img/Keyword/${keywordDropdown.value}.png`
@@ -51,7 +51,7 @@ const addKeyword = () => {
     newKeyword.style.display = "flex"
     let addedKeyword = keywordHolder.appendChild(newKeyword)
     keywordList.push(addedKeyword)
-    keywordListData.push({keyword: keywordDropdown.value, value: keywordValue.value})
+    keywordListData.push({keyword: keywordDropdown.value, value: keywordValue.value, value2: keywordValue2.value})
 }
 
 const LongMax = (numArray) => {
@@ -239,6 +239,7 @@ const toggleDetails = () => {
     detailCheckbox.checked = false
     keywordDropdown.disabled = true
     keywordValue.disabled = true
+	keywordValue2.disabled = true
     addKeywordBtn.disabled = true
     removeKeywordBtn.disabled = true
     inputFlavorText.disabled = true
@@ -246,6 +247,7 @@ const toggleDetails = () => {
     cardJustifier.style.justifyContent = "center"
     inputFlavorText.value = ""
     keywordValue.value = 0
+	keywordValue2.value = 0
     var checked = false
     detailCheckbox.addEventListener("input", function (event) {
         if (checked != detailCheckbox.checked) {
@@ -257,6 +259,7 @@ const toggleDetails = () => {
             detailBox.style.display = "flex"
             keywordDropdown.disabled = false
             keywordValue.disabled = false
+			keywordValue2.disabled = false
             addKeywordBtn.disabled = false
             removeKeywordBtn.disabled = false
             inputFlavorText.disabled = false
@@ -1000,6 +1003,7 @@ const keywordTitle = document.getElementById("keyword-title")
 const keywordElement = document.getElementById("keyword-element")
 const keywordTitleStroke = document.getElementById("keyword-title-stroke")
 const keywordValue = document.getElementById("keyword-value")
+const keywordValue2 = document.getElementById("keyword-value-2")
 const addKeywordBtn = document.getElementById("add-keyword")
 const removeKeywordBtn = document.getElementById("remove-keyword")
 
