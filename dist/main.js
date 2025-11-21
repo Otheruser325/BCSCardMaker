@@ -4817,7 +4817,7 @@
         let n = En.appendChild(r);
         Cn.push(n), vn.push({
             keyword: In.value,
-            value: Mn.value
+            value: Mn.value,
 			value2: Aan.value
         })
     }, globalThis.removeKeyword = Br, globalThis.resetImageValues = () => {

@@ -607,10 +607,10 @@ const addDraftKeywords = (Keywords) => {
         let Keyword = Keywords[i].keyword
         let Value = Keywords[i].value
 
-        let finalDescription = keywords[Keyword].Description.replace("{VALUE}", Value)
+        let finalDescription = keywords[Keyword].Description.replace("{VALUE}", Value, "{VALUE2}", Value2)
         keywordDescription.innerHTML = md.renderInline(finalDescription)
 
-        let finalTitle = keywords[Keyword].Title.replace("{VALUE}", Value)
+        let finalTitle = keywords[Keyword].Title.replace("{VALUE}", Value, "{VALUE2}", Value2)
         keywordTitle.innerHTML = md.renderInline(finalTitle)
         keywordTitleStroke.innerHTML = md.renderInline(finalTitle)
 
@@ -619,7 +619,7 @@ const addDraftKeywords = (Keywords) => {
         newKeyword.style.display = "flex"
         let addedKeyword = keywordHolder.appendChild(newKeyword)
         keywordList.push(addedKeyword)
-        keywordListData.push({ keyword: Keyword, value: Value })
+        keywordListData.push({ keyword: Keyword, value: Value, value2: Value2 })
     }
 }
 const saveDraft = () => {
