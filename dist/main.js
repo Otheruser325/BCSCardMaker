@@ -4808,17 +4808,12 @@
         Sn.innerHTML = ko.renderInline(e);
         let t = Or[In.value].Title.replace("{VALUE}", Mn.value);
         qn.innerHTML = ko.renderInline(t), Rn.innerHTML = ko.renderInline(t), Ln.src = `/BCSCardMaker/src/img/Keyword/${In.value}.png`;
-		let f = Or[In.value].Description.replace("{VALUE2}", Aan.value);
-        Sn.innerHTML = ko.renderInline(f);
-		let v = Or[In.value].Title.replace("{VALUE2}", Aan.value);
-        qn.innerHTML = ko.renderInline(v), Rn.innerHTML = ko.renderInline(v), Ln.src = `/BCSCardMaker/src/img/Keyword/${In.value}.png`;
         let r = zn.cloneNode(!0);
         r.style.display = "flex";
         let n = En.appendChild(r);
         Cn.push(n), vn.push({
             keyword: In.value,
-            value: Mn.value,
-			value2: Aan.value
+            value: Mn.value
         })
     }, globalThis.removeKeyword = Br, globalThis.resetImageValues = () => {
         _o.x = 0, _o.y = 0, _o.w = bo, _o.h = bo, document.getElementById("x-input").value = 0, document.getElementById("y-input").value = 0, document.getElementById("w-input").value = 100, document.getElementById("h-input").value = 100, Xr()
