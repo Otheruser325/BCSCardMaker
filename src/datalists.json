@@ -110,6 +110,15 @@
 
         "Pierce": {"Title": "Pierce {VALUE}", "OptionTitle": "Pierce",
         "Description": "Deals equal damage to the next {VALUE} Bloons in line"},
+		
+		"Bounce": {"Title": "Bounce {VALUE}, {VALUE2}", "OptionTitle": "Bounce",
+        "Description": "Deal {VALUE2} damage to a random other Bloon {VALUE} times"},
+		
+		"Shocked": {"Title": "Shocked",
+        "Description": "Will take 20 damage at the end of its turn and before attacking; wears off after its delay is reduced once. Effect will persist on immobile targets"},
+
+        "MegaShocked": {"Title": "Mega Shocked",
+        "Description": "Will take 40 damage at the end of its turn and before attacking; wears off after its delay is reduced once. Effect will persist on immobile targets"},
         
         "Stunned": {"Title": "Stunned",
         "Description": "Monkey can't attack or reload until stun wears off. Bloon delay does not reduce at end of turn"},
@@ -122,6 +131,9 @@
 
         "Deactivated": {"Title": "Deactivated",
         "Description": "Monkey or Bloon can't trigger any on keyword effects (e.g. **On Turn Start**) at the start of its next turn"},
+		
+		"Attached": {"Title": "Attached",
+        "Description": "Cannot attack normally whilst attached on top of a Monkey. Becomes unattached and returns to a free Monkey space whenever the Monkey it was attached to was removed"}
 
         "Temporary": {"Title": "Temporary",
         "Description": "Is removed at end of turn after ammo reaches 0"},
@@ -137,6 +149,15 @@
 
         "StrongAcidPool": {"Title": "Strong Acid Pool",
         "Description": "Deals 50 damage to any Bloon ending its turn on it. Lasts 2 turns"},
+		
+		"Foam": {"Title": "Foam",
+        "Description": "Removes Camo and deactivates abilities to any Bloon ending its turn on it. Lasts 2 turns"},
+		
+		"ClusterBomb": {"Title": "Cluster Bomb",
+        "Description": "Deals 60 damage and 30 splash damage to any Bloon that is caught by it. Lasts 1 turn"},
+		
+		"HotDog": {"Title": "Hot Dog",
+        "Description": "Any Bloon ending their turn on it gains **Revived** and is consumed"},
 
         "Pacifist": {"Title": "Pacifist",
         "Description": "Can target friendly Monkeys normally"},
@@ -148,7 +169,10 @@
         "Description": "Triggers an additional effect if you have 0 Gold"},
 
         "250Health": {"Title": "50% Health",
-        "Description": "Triggers an additional effect if your Hero falls below 250 health"}
+        "Description": "Triggers an additional effect if your Hero falls below 250 health"},
+		
+		"Enraged": {"Title": "Enraged",
+        "Description": "Gains -1 reload delay and +10 ATK until enrage wears off"}
     },
 
     "heroes": {
