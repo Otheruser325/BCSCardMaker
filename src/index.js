@@ -272,6 +272,7 @@ const toggleDetails = () => {
             detailBox.style.display = "none"
             keywordDropdown.disabled = true
             keywordValue.disabled = true
+			keywordValue2.disabled = true
             addKeywordBtn.disabled = true
             removeKeywordBtn.disabled = true
             inputFlavorText.disabled = true
