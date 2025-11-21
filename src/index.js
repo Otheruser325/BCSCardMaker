@@ -606,7 +606,7 @@ const addDraftKeywords = (Keywords) => {
 
         let Keyword = Keywords[i].keyword
         let Value = Keywords[i].value
-		let Value2 = Keywords[i].value
+		let Value2 = Keywords[i].value2
 
         let finalDescription = keywords[Keyword].Description.replace("{VALUE}", Value, "{VALUE2}", Value2)
         keywordDescription.innerHTML = md.renderInline(finalDescription)
