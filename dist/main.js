@@ -4769,7 +4769,7 @@
             zr(e, 2, 41)
         })
     })(), (() => {
-        _n.checked = !1, In.disabled = !0, Mn.disabled = !0, Nn.disabled = !0, Pn.disabled = !0, Tn.disabled = !0, Aan.disabled = !0, In.value = "Defender", gn.style.justifyContent = "center", Tn.value = "", Mn.value = 0;
+        _n.checked = !1, In.disabled = !0, Mn.disabled = !0, Nn.disabled = !0, Pn.disabled = !0, Tn.disabled = !0, Aan.disabled = !0, In.value = "Defender", gn.style.justifyContent = "center", Tn.value = "", Mn.value = 0, Aan.value = 0;
         var e = !1;
         _n.addEventListener("input", function(t) {
             e != _n.checked && (e = _n.checked, wn.classList.toggle("disabled-text")), _n.checked ? (bn.style.width = "775px", kn.style.display = "flex", In.disabled = !1, Mn.disabled = !1, Nn.disabled = !1, Pn.disabled = !1, Tn.disabled = !1, Aan.disabled = !1, gn.style.justifyContent = "") : (bn.style.width = "375px", kn.style.display = "none", In.disabled = !0, Mn.disabled = !0, Nn.disabled = !0, Pn.disabled = !0, Tn.disabled = !0, Aan.disabled = !0, gn.style.justifyContent = "center")
