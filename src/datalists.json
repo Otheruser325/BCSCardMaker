@@ -14,6 +14,9 @@
 		
 		"Tank" : {"Title": "Tank {VALUE}", "OptionTitle": "Tank",
         "Description": "Can protect your hero from incoming bloon attacks; has {VALUE} health and taunts attacking bloons over to it. Monkey is removed when out of health"},
+		
+		"Attacker": {"Title": "Attacker {VALUE}, {VALUE2}, {VALUE3}", "OptionTitle": "Attacker",
+        "Description": "Can manually attack enemy Bloons; has {VALUE} ammo, {VALUE2} reload delay and deals {VALUE3} damage per shot"},
 
         "Detect" : {"Title": "Detect",
         "Description": "Can target Camo Bloons normally"},
@@ -128,6 +131,9 @@
 
         "Paused": {"Title": "Paused",
         "Description": "Monkey can't be targeted by Hero Abilities and Powers nor attack or reload until pause wears off. Bloon delay does not reduce at end of turn and cannot be damaged or targeted by Monkeys, Hero Abilities or Powers until pause wears off"},
+		
+		"Cocooned": {"Title": "Cocooned",
+        "Description": "Monkey or Bloon is contained and is unable to attack or change delay until cocoon breaks. Cocoon has 2x health equivalent to Bloon health or 4x health equivalent to Monkey ATK. Monkeys can attack this normally"},
 
         "Deactivated": {"Title": "Deactivated",
         "Description": "Monkey or Bloon can't trigger any on keyword effects (e.g. **On Turn Start**) at the start of its next turn"},
@@ -155,6 +161,9 @@
 		
 		"ClusterBomb": {"Title": "Cluster Bomb",
         "Description": "Deals 60 damage and 30 splash damage to any Bloon that is caught by it. Lasts 1 turn"},
+		
+		"UnstableConcoction": {"Title": "Unstable Concoction",
+        "Description": "Coated Bloons that were popped will deal 100 splash damage. Wears off after 3 turns"},
 		
 		"HotDog": {"Title": "Hot Dog",
         "Description": "Any Bloon ending their turn on it gains **Revived** and is consumed"},

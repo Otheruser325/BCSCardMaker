@@ -44,10 +44,12 @@ const addKeyword = () => {
     let finalDescription = keywords[keywordDropdown.value].Description
     .replaceAll("{VALUE}", keywordValue.value)
     .replaceAll("{VALUE2}", keywordValue2.value)
+	.replaceAll("{VALUE3}", keywordValue3.value)
     keywordDescription.innerHTML = md.renderInline(finalDescription)
     let finalTitle = keywords[keywordDropdown.value].Title
     .replaceAll("{VALUE}", keywordValue.value)
     .replaceAll("{VALUE2}", keywordValue2.value)
+	.replaceAll("{VALUE3}", keywordValue3.value)
     keywordTitle.innerHTML = md.renderInline(finalTitle)
     keywordTitleStroke.innerHTML = md.renderInline(finalTitle)
     keywordImg.src = `/BCSCardMaker/src/img/Keyword/${keywordDropdown.value}.png`
@@ -55,7 +57,7 @@ const addKeyword = () => {
     newKeyword.style.display = "flex"
     let addedKeyword = keywordHolder.appendChild(newKeyword)
     keywordList.push(addedKeyword)
-    keywordListData.push({keyword: keywordDropdown.value, value: keywordValue.value, value2: keywordValue2.value})
+    keywordListData.push({keyword: keywordDropdown.value, value: keywordValue.value, value2: keywordValue2.value, value3: keywordValue3.value})
 }
 
 const LongMax = (numArray) => {
@@ -252,6 +254,7 @@ const toggleDetails = () => {
     inputFlavorText.value = ""
     keywordValue.value = 0
 	keywordValue2.value = 0
+	keywordValue3.value = 0
     var checked = false
     detailCheckbox.addEventListener("input", function (event) {
         if (checked != detailCheckbox.checked) {
@@ -264,6 +267,7 @@ const toggleDetails = () => {
             keywordDropdown.disabled = false
             keywordValue.disabled = false
 			keywordValue2.disabled = false
+			keywordValue3.disabled = false
             addKeywordBtn.disabled = false
             removeKeywordBtn.disabled = false
             inputFlavorText.disabled = false
@@ -277,6 +281,7 @@ const toggleDetails = () => {
             keywordDropdown.disabled = true
             keywordValue.disabled = true
 			keywordValue2.disabled = true
+			keywordValue3.disabled = true
             addKeywordBtn.disabled = true
             removeKeywordBtn.disabled = true
             inputFlavorText.disabled = true
@@ -611,15 +616,18 @@ const addDraftKeywords = (Keywords) => {
         let Keyword = Keywords[i].keyword
         let Value = Keywords[i].value
 		let Value2 = Keywords[i].value2
+		let Value3 = Keywords[i].value3
 
         let finalDescription = keywords[Keyword].Description
         .replaceAll("{VALUE}", Value)
         .replaceAll("{VALUE2}", Value2)
+		.replaceAll("{VALUE3}", Value3)
         keywordDescription.innerHTML = md.renderInline(finalDescription)
 
         let finalTitle = keywords[Keyword].Title
         .replaceAll("{VALUE}", Value)
         .replaceAll("{VALUE2}", Value2)
+		.replaceAll("{VALUE3}", Value3)
         keywordTitle.innerHTML = md.renderInline(finalTitle)
         keywordTitleStroke.innerHTML = md.renderInline(finalTitle)
 
@@ -628,7 +636,7 @@ const addDraftKeywords = (Keywords) => {
         newKeyword.style.display = "flex"
         let addedKeyword = keywordHolder.appendChild(newKeyword)
         keywordList.push(addedKeyword)
-        keywordListData.push({ keyword: Keyword, value: Value, value2: Value2 })
+        keywordListData.push({ keyword: Keyword, value: Value, value2: Value2, value3: Value3 })
     }
 }
 const saveDraft = () => {
@@ -1014,6 +1022,7 @@ const keywordElement = document.getElementById("keyword-element")
 const keywordTitleStroke = document.getElementById("keyword-title-stroke")
 const keywordValue = document.getElementById("keyword-value")
 const keywordValue2 = document.getElementById("keyword-value-2")
+const keywordValue3 = document.getElementById("keyword-value-3")
 const addKeywordBtn = document.getElementById("add-keyword")
 const removeKeywordBtn = document.getElementById("remove-keyword")
 
