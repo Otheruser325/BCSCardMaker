@@ -117,6 +117,9 @@
 		"Bounce": {"Title": "Bounce {VALUE}, {VALUE2}", "OptionTitle": "Bounce",
         "Description": "Deal {VALUE2} damage to a random other Bloon {VALUE} times"},
 		
+		"Poison" : {"Title": "Poison {VALUE}", "OptionTitle": "Poison",
+        "Description": "Will take {VALUE} damage at the end of its turn and before attacking. Poison can stack for increased damage potential"},
+		
 		"Shocked": {"Title": "Shocked",
         "Description": "Will take 20 damage at the end of its turn and before attacking; wears off after its delay is reduced once. Effect will persist on immobile targets"},
 
