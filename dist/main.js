@@ -4580,12 +4580,12 @@
 					q = e[t].value3,
                     o = Or[r].Description
 					.replaceAll("{VALUE}", n)
-					.replaceAll("{VALUE2}", p);
+					.replaceAll("{VALUE2}", p)
 					.replaceAll("{VALUE3}", q);
                 Sn.innerHTML = ko.renderInline(o);
                 let i = Or[r].Title
 				.replaceAll("{VALUE}", n)
-				.replaceAll("{VALUE2}", p);
+				.replaceAll("{VALUE2}", p)
 				.replaceAll("{VALUE3}", q);
                 qn.innerHTML = ko.renderInline(i), Rn.innerHTML = ko.renderInline(i), Ln.src = `/BCSCardMaker/src/img/Keyword/${r}.png`;
                 let s = zn.cloneNode(!0);
@@ -4817,12 +4817,12 @@
     ko.disable(["link", "image"]), globalThis.updateCardLayout = Kr, globalThis.setMonkeyStatVisibility = Qr, globalThis.addKeyword = () => {
         let e = Or[In.value].Description
 		.replaceAll("{VALUE}", Mn.value)
-		.replaceAll("{VALUE2}", Aan.value);
+		.replaceAll("{VALUE2}", Aan.value)
 		.replaceAll("{VALUE3}", Abn.value);
         Sn.innerHTML = ko.renderInline(e);
         let t = Or[In.value].Title
 		.replaceAll("{VALUE}", Mn.value)
-		.replaceAll("{VALUE2}", Aan.value);
+		.replaceAll("{VALUE2}", Aan.value)
 		.replaceAll("{VALUE3}", Abn.value);
         qn.innerHTML = ko.renderInline(t), Rn.innerHTML = ko.renderInline(t), Ln.src = `/BCSCardMaker/src/img/Keyword/${In.value}.png`;
         let r = zn.cloneNode(!0);
