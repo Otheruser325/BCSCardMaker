@@ -4577,9 +4577,13 @@
                 let r = e[t].keyword,
                     n = e[t].value,
 					p = e[t].value2,
-                    o = Or[r].Description.replace("{VALUE}", n, "{VALUE2}", p);
+                    o = Or[r].Description
+					.replaceAll("{VALUE}", n)
+					.replaceAll("{VALUE2}", p);
                 Sn.innerHTML = ko.renderInline(o);
-                let i = Or[r].Title.replace("{VALUE}", n, "{VALUE2}", p);
+                let i = Or[r].Title
+				.replaceAll("{VALUE}", n)
+				.replaceAll("{VALUE2}", p);
                 qn.innerHTML = ko.renderInline(i), Rn.innerHTML = ko.renderInline(i), Ln.src = `/BCSCardMaker/src/img/Keyword/${r}.png`;
                 let s = zn.cloneNode(!0);
                 s.style.display = "flex";
@@ -4806,9 +4810,13 @@
     })();
     const ko = _r();
     ko.disable(["link", "image"]), globalThis.updateCardLayout = Kr, globalThis.setMonkeyStatVisibility = Qr, globalThis.addKeyword = () => {
-        let e = Or[In.value].Description.replace("{VALUE}", Mn.value, "{VALUE2}", Aan.value);
+        let e = Or[In.value].Description
+		.replaceAll("{VALUE}", Mn.value)
+		.replaceAll("{VALUE2}", Aan.value);
         Sn.innerHTML = ko.renderInline(e);
-        let t = Or[In.value].Title.replace("{VALUE}", Mn.value, "{VALUE2}", Aan.value);
+        let t = Or[In.value].Title
+		.replaceAll("{VALUE}", Mn.value)
+		.replaceAll("{VALUE2}", Aan.value);
         qn.innerHTML = ko.renderInline(t), Rn.innerHTML = ko.renderInline(t), Ln.src = `/BCSCardMaker/src/img/Keyword/${In.value}.png`;
         let r = zn.cloneNode(!0);
         r.style.display = "flex";

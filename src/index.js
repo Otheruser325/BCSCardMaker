@@ -41,9 +41,13 @@ const editAbilityTextEvent = (element, hasStroke, part) => {
 }
 
 const addKeyword = () => {
-    let finalDescription = keywords[keywordDropdown.value].Description.replace("{VALUE}", keywordValue.value, "{VALUE2}", keywordValue2.value)
+    let finalDescription = keywords[keywordDropdown.value].Description
+    .replaceAll("{VALUE}", keywordValue.value)
+    .replaceAll("{VALUE2}", keywordValue2.value)
     keywordDescription.innerHTML = md.renderInline(finalDescription)
-    let finalTitle = keywords[keywordDropdown.value].Title.replace("{VALUE}", keywordValue.value, "{VALUE2}", keywordValue2.value)
+    let finalTitle = keywords[keywordDropdown.value].Title
+    .replaceAll("{VALUE}", keywordValue.value)
+    .replaceAll("{VALUE2}", keywordValue2.value)
     keywordTitle.innerHTML = md.renderInline(finalTitle)
     keywordTitleStroke.innerHTML = md.renderInline(finalTitle)
     keywordImg.src = `/BCSCardMaker/src/img/Keyword/${keywordDropdown.value}.png`
@@ -608,10 +612,14 @@ const addDraftKeywords = (Keywords) => {
         let Value = Keywords[i].value
 		let Value2 = Keywords[i].value2
 
-        let finalDescription = keywords[Keyword].Description.replace("{VALUE}", Value, "{VALUE2}", Value2)
+        let finalDescription = keywords[Keyword].Description
+        .replaceAll("{VALUE}", Value)
+        .replaceAll("{VALUE2}", Value2)
         keywordDescription.innerHTML = md.renderInline(finalDescription)
 
-        let finalTitle = keywords[Keyword].Title.replace("{VALUE}", Value, "{VALUE2}", Value2)
+        let finalTitle = keywords[Keyword].Title
+        .replaceAll("{VALUE}", Value)
+        .replaceAll("{VALUE2}", Value2)
         keywordTitle.innerHTML = md.renderInline(finalTitle)
         keywordTitleStroke.innerHTML = md.renderInline(finalTitle)
 
