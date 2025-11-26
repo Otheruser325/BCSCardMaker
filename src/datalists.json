@@ -56,6 +56,9 @@
     
         "OnLeak": {"Title": "On Leak",
         "Description": "Triggers when a bloon attacks a hero (after defenders have acted)"},
+		
+		"OnFaceHit": {"Title": "On Face Hit",
+        "Description": "Triggers when a hero takes damage from face (e.g. **Bloon Strike**)"},
 
         "OnPlay": {"Title": "On Play",
         "Description": "Triggers when card is played"},
@@ -87,6 +90,9 @@
         "OnTurnEnd": {"Title": "On Turn End",
         "Description": "Triggers once turn has ended"},
 		
+		"OnConfiguration": {"Title": "On Configuration",
+        "Description": "Triggers when this Monkey is configured by the player. Double click (or tap in mobile) on this Monkey to toggle its effect. Cannot toggle during opponent's turn"},
+		
 		"OnPlayersTurn": {"Title": "On Player's Turn",
         "Description": "Triggers when it's your turn"},
 		
@@ -107,6 +113,9 @@
 
         "Shield": {"Title": "Shield {VALUE}", "OptionTitle": "Shield",
         "Description": "Shield will block {VALUE} incoming damage"},
+		
+		"Debuff": {"Title": "Debuff +{VALUE}", "OptionTitle": "Debuff",
+        "Description": "Will receive +{VALUE} damage from all damaging sources"},
         
         "SplashDamage": {"Title": "Splash Damage",
         "Description": "Also deals damage to Bloons on either side of the target"},
@@ -136,7 +145,7 @@
         "Description": "Monkey can't be targeted by Hero Abilities and Powers nor attack or reload until pause wears off. Bloon delay does not reduce at end of turn and cannot be damaged or targeted by Monkeys, Hero Abilities or Powers until pause wears off"},
 		
 		"Cocooned": {"Title": "Cocooned",
-        "Description": "Monkey or Bloon is contained and is unable to attack or change delay until cocoon breaks. Cocoon has 2x health equivalent to Bloon health or 4x health equivalent to Monkey ATK. Monkeys can attack this normally"},
+        "Description": "Monkey or Bloon is contained and is unable to attack or change delay until cocoon breaks. Cocoon has 2x health equivalent to Bloon health or 4x health equivalent to Monkey ATK and decays in health based on duration. Monkeys can attack this normally"},
 
         "Deactivated": {"Title": "Deactivated",
         "Description": "Monkey or Bloon can't trigger any on keyword effects (e.g. **On Turn Start**) at the start of its next turn"},
