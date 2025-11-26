@@ -185,6 +185,9 @@
 		
 		"Sabotage": {"Title": "Sabotage",
         "Description": "Can target enemy Monkeys normally"},
+		
+		"FriendlyFire": {"Title": "Friendly Fire",
+        "Description": "Monkey can also target friendly Bloons"},
 
         "ZeroGold": {"Title": "Zero Gold",
         "Description": "Triggers an additional effect if you have 0 Gold"},
