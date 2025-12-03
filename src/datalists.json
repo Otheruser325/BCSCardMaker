@@ -23,6 +23,9 @@
 
         "Focus" : {"Title": "Focus",
         "Description": "Can bypass Must Pop conditions normally"},
+		
+		"ComboAttack" : {"Title": "Combo Attack +{VALUE}", "OptionTitle": "Combo Attack",
+        "Description" : "It gains +{VALUE} ATK for each Ammo spent; resets after emptying all ammo or the start of your next turn"},
 
         "DoubleAttack" : {"Title": "Double Attack",
         "Description" : "Attacks twice"},
@@ -151,7 +154,10 @@
         "Description": "Monkey or Bloon can't trigger any on keyword effects (e.g. **On Turn Start**) at the start of its next turn"},
 		
 		"Attached": {"Title": "Attached",
-        "Description": "Cannot attack normally whilst attached on top of a Monkey. Becomes unattached and returns to a free Monkey space whenever the Monkey it was attached to was removed"}
+        "Description": "Cannot attack normally whilst attached on top of a Monkey. Becomes unattached and returns to a free Monkey space whenever the Monkey it was attached to was removed"},
+		
+		"Duration": {"Title": "Duration {VALUE}", "OptionTitle": "Duration",
+        "Description": "Is removed at end of turn after {VALUE} turns it was played"},
 
         "Temporary": {"Title": "Temporary",
         "Description": "Is removed at end of turn after ammo reaches 0"},
