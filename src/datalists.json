@@ -202,7 +202,10 @@
         "Description": "Triggers an additional effect if your Hero falls below 250 health"},
 		
 		"Enraged": {"Title": "Enraged",
-        "Description": "Gains -1 reload delay and +10 ATK until enrage wears off"}
+        "Description": "Gains -1 reload delay and +10 ATK until enrage wears off"},
+		
+		"ShadowRealm": {"Title": "Shadow Realm",
+        "Description": "Bloon is unable to attack while inside the Shadow Realm until expiration. All Cordelius Monkeys gains +15 ATK while inside the Shadow Realm and Monkeys inside the Shadow Realm can only attack Bloons that are in there until expiration"}
     },
 
     "heroes": {
